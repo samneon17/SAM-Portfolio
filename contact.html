@@ -5,11 +5,21 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>SAM | Portfolio</title>
 
-  <link rel="stylesheet" href="./index.css">
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="index.css">
 
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@500;700&display=swap"
     rel="stylesheet">
+
+  <style>
+    /* Logo ki line hatane ke liye fix */
+    .navbar-brand, .navbar-brand:hover, .navbar-brand h1 {
+      text-decoration: none !important;
+      border: none !important;
+      box-shadow: none !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -21,24 +31,23 @@
   <!-- Header / Navbar -->
   <header>
     <div class="navwrap" role="navigation" aria-label="Main navigation">
-      <div class="logo" aria-hidden>
-        <div class="logo" aria-hidden>
-          <a href="home.html" class="navbar-brand" style="text-decoration:none;">
-            <h1 style="
-              font-family: 'Poppins', sans-serif;
-              font-size: 150%;
-              color: rgb(199, 112, 240);
-              font-weight: 900;
-              letter-spacing: 1px;
-              text-shadow: 0 0 12px rgba(199, 112, 240, 0.5);
-              margin: 0;
-            ">S A M.</h1>
-          </a>
-        </div>
+      <div class="logo">
+        <a href="index.html" class="navbar-brand" style="text-decoration:none !important;">
+          <h1 style="
+            font-family: 'Poppins', sans-serif;
+            font-size: 150%;
+            color: rgb(199, 112, 240);
+            font-weight: 900;
+            letter-spacing: 1px;
+            text-shadow: 0 0 12px rgba(199, 112, 240, 0.5);
+            margin: 0;
+            text-decoration: none !important;
+          ">S A M.</h1>
+        </a>
       </div>
 
       <!-- Desktop nav -->
-      <nav class="desktop" aria-hidden="false">
+      <nav class="desktop">
         <a class="nav-link" href="home.html">
           <svg viewBox="0 0 24 24" width="20" height="20">
             <path fill="currentColor" d="M12 3l9 9h-3v9h-12v-9h-3z" />
@@ -46,7 +55,8 @@
           Home
         </a>
 
-        <a class="nav-link" href="about.html">
+        <!-- FIXED: changed about.html to index.html to stop 404 error -->
+        <a class="nav-link" href="index.html">
           <svg viewBox="0 0 24 24" width="20" height="20">
             <path fill="currentColor"
               d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4 0-7 2-7 4v2h14v-2c0-2-3-4-7-4z" />
@@ -69,9 +79,9 @@
         </a>
       </nav>
 
-      <!-- Mobile hamburger -->
-      <button class="hamburger" id="hambBtn" aria-label="Open menu" aria-expanded="false">
-        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" aria-hidden="true">
+      <!-- Mobile hamburger (Corrected ID and structure) -->
+      <button class="hamburger" id="hambBtn" aria-label="Open menu">
+        <svg width="20" height="14" viewBox="0 0 20 14" fill="none">
           <rect width="20" height="2" rx="1" fill="white" opacity="0.95" />
           <rect y="6" width="20" height="2" rx="1" fill="white" opacity="0.95" />
           <rect y="12" width="20" height="2" rx="1" fill="white" opacity="0.95" />
@@ -80,15 +90,15 @@
     </div>
   </header>
 
-  <!-- Mobile panel -->
+  <!-- Mobile panel (Links Fixed) -->
   <div id="mobilePanel" class="mobile-panel" role="menu" aria-hidden="true">
     <a href="home.html" class="mobile-link">Home</a>
-    <a href="about.html" class="mobile-link">About</a>
+    <a href="index.html" class="mobile-link">About</a>
     <a href="experience.html" class="mobile-link">Experience</a>
     <a href="contact.html" class="mobile-link">Contact</a>
   </div>
 
-  <!-- CONTACT SECTION (same look as screenshot) -->
+  <!-- CONTACT SECTION -->
   <section id="contact" class="contact-section">
     <div class="contact-wrap">
       <h2 class="contact-title">GET IN TOUCH</h2>
@@ -97,14 +107,10 @@
         I would like to know the final requirements of your project. Please get in touch with me and share details about your project.
       </p>
 
-      <!-- Sends to your email using Web3Forms -->
       <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-        <!-- STEP: web3forms.com se key le kar yahan paste karo -->
         <input type="hidden" name="access_key" value="7526f169-5f4f-4b61-a8ee-e0c2535f77e3" />
-
-        <!-- recommended -->
-        <input type="hidden" name="subject" value="New message from UBAID Portfolio" />
-        <input type="hidden" name="from_name" value="UBAID Portfolio" />
+        <input type="hidden" name="subject" value="New message from SAM Portfolio" />
+        <input type="hidden" name="from_name" value="SAM Portfolio" />
 
         <input class="contact-input" type="text" name="name" placeholder="Name" required>
         <input class="contact-input" type="email" name="email" placeholder="Email" required>
@@ -117,9 +123,7 @@
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
+  <!-- JS Link -->
   <script src="main.js"></script>
-
-  
 </body>
 </html>
-
