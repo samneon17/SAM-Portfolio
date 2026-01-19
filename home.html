@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>S A M | Portfolio</title>
+
+  <link rel="stylesheet" href="./index.css">
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@500;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Particles and soft glows -->
+  <div id="particles-js" aria-hidden="true"></div>
+  <div class="radial-glow glow-left" aria-hidden="true"></div>
+  <div class="radial-glow glow-right" aria-hidden="true"></div>
+
+  <!-- Header / Navbar -->
+  <header>
+    <div class="navwrap" role="navigation" aria-label="Main navigation">
+      <div class="logo" aria-hidden>
+        <div class="logo" aria-hidden>
+          <a href="/" class="navbar-brand" style="text-decoration:none;">
+            <h1 style="
+              font-family: 'Poppins', sans-serif;
+              font-size: 150%;
+              color: rgb(199, 112, 240);
+              font-weight: 900;
+              letter-spacing: 1px;
+              text-shadow: 0 0 12px rgba(199, 112, 240, 0.5);
+              margin: 0;
+            ">
+              S A M.
+            </h1>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Desktop nav -->
+      <nav class="desktop" aria-hidden="false">
+        <a class="nav-link active" href="home.html">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="currentColor" d="M12 3l9 9h-3v9h-12v-9h-3z" />
+          </svg>
+          Home
+        </a>
+        <a class="nav-link" href="about.html">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="currentColor" d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4 0-7 2-7 4v2h14v-2c0-2-3-4-7-4z" />
+          </svg>
+          About
+        </a>
+        
+        <a class="nav-link" href="experience.html">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="currentColor" d="M4 7h16v13H4zM9 4h6v3H9z" />
+          </svg>
+          Experience
+        </a>
+        <a class="nav-link" href="contact.html">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="currentColor" d="M4 4h16v16H4zM22 6l-10 7L2 6" />
+          </svg>
+          Contact
+        </a>
+      </nav>
+
+      <!-- Mobile hamburger -->
+      <button class="hamburger" id="hambBtn" aria-label="Open menu" aria-expanded="false">
+        <!-- simple 3-line icon -->
+        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" aria-hidden>
+          <rect width="20" height="2" rx="1" fill="white" opacity="0.95" />
+          <rect y="6" width="20" height="2" rx="1" fill="white" opacity="0.95" />
+          <rect y="12" width="20" height="2" rx="1" fill="white" opacity="0.95" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile panel (hidden by default) -->
+  <div id="mobilePanel" class="mobile-panel" role="menu" aria-hidden="true">
+    <a href="home.html" class="mobile-link">Home</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="experience.html" class="mobile-link">Experience</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+  </div>
+  
+
+  <!-- Main content (landing only) -->
+  <main>
+    <div class="container">
+      <div class="hero-grid" id="home" role="region" aria-label="Home">
+        <!-- left: text -->
+        <div>
+          <h2 class="h-name">Hi There! </h2> <br>
+          <h2 class="h-name">I'M <span class="grad">UBAID Ullah</span></h2>
+          <br>
+          <br>
+          <p class="h-title">
+            <span id="typed-text"></span>
+            <span class="cursor"></span>
+          </p>
+          <br>
+          <div class="socials" aria-hidden>
+            <!-- Load Font Awesome -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+              integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <!-- Links with icons -->
+          </div>
+        </div>
+
+        <!-- right: profile placeholder -->
+        <div>
+
+          <img src="pic.png" alt="Sam" style="width:100%;height:100%;object-fit:cover;border-radius:14px" />
+
+        </div>
+  </main>
+  <!-- ===========================
+     INTRODUCTION SECTION
+=========================== -->
+  <section id="home" class="intro-section">
+
+    <div class="intro-content">
+      <h2>LET ME <span class="highlight">INTRODUCE</span> MYSELF</h2>
+
+      <div class="intro-text-image">
+        <div class="intro-text">
+          <p>I fell in love with Web3 communities and I’ve learnt how powerful engagement and teamwork can be. ?? </p>
+          <p>I am fluent in managing platforms like <i id="bold">Discord, Telegram, and X (Twitter) keeping them active,
+              positive, and spam free.</i></p>
+          <p>My field of interest lies in building <i id="bold">strong online communities, organizing campaigns and
+              supporting projects through creative social engagement.</i></p>
+          <p>Whenever possible, I apply my skills to build and manage <i id="bold">active Web3 communities, creating
+              meaningful engagement through clear communication, authenticity and a deep understanding of community
+              growth </i></p>
+          <p>Alongside my community work, I’m also a <i id="bold"> content creator who enjoys crafting engaging posts, threads, and updates that keep audiences active and connected.</i></p>
+        </div>
+
+        <!-- Leave your image placeholder here -->
+        <div class="intro-image">
+          <img src="discord.jpg" alt="Sam Image" />
+        </div>
+      </div>
+
+      <div class="find-me">
+        <h3>FIND ME ON</h3>
+        <p>Feel free to <i id="bold">connect </i> &nbsp; with me</p>
+        <div class="social-icons">
+          <a href="https://x.com/Sam_Neon_0" target="_blank" style="text-decoration: none;">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X (Twitter)" width="16"
+              height="16" style="filter: invert(1);" />
+          </a>
+          <a href="https://t.me/SamNeon17" target="_blank" style="text-decoration:none;">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram" width="16" height="16" style="filter: invert(1);" />
+</a>
+
+<a href="https://github.com/samneon17" target="_blank" style="text-decoration:none;">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" width="16" height="16" style="filter: invert(1);" />
+</a>
+
+<a href="https://linkedin.com/in/sam-neon" target="_blank" style="text-decoration:none;">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="16" height="16" style="filter: invert(1);" />
+</a>
+    </div>
+  </section>
+
+
+  <!-- Coming soon toast -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  
+  <script src="./main.js"></script>
+</body>
+
+</html>

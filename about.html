@@ -1,0 +1,186 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>S A M | Portfolio</title>
+
+  <link rel="stylesheet" href="/index.css">
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@500;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Particles and soft glows -->
+  <div id="particles-js" aria-hidden="true"></div>
+  <div class="radial-glow glow-left" aria-hidden="true"></div>
+  <div class="radial-glow glow-right" aria-hidden="true"></div>
+
+  <!-- Header / Navbar -->
+  <header>
+    <div class="navwrap" role="navigation" aria-label="Main navigation">
+      <div class="logo" aria-hidden>
+        <div class="logo" aria-hidden>
+          <a href="/" class="navbar-brand" style="text-decoration:none;">
+            <h1 style="
+              font-family: 'Poppins', sans-serif;
+              font-size: 150%;
+              color: rgb(199, 112, 240);
+              font-weight: 900;
+              letter-spacing: 1px;
+              text-shadow: 0 0 12px rgba(199, 112, 240, 0.5);
+              margin: 0;
+            ">
+              S A M.
+            </h1>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Desktop nav -->
+      <nav class="desktop" aria-hidden="false">
+        <a class="nav-link" href="home.html">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="currentColor" d="M12 3l9 9h-3v9h-12v-9h-3z" />
+          </svg>
+          Home
+        </a>
+        <a class="nav-link active" href="about.html">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="currentColor" d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4 0-7 2-7 4v2h14v-2c0-2-3-4-7-4z" />
+          </svg>
+          About
+        </a>
+       
+        <a class="nav-link" href="experience.html">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="currentColor" d="M4 7h16v13H4zM9 4h6v3H9z" />
+          </svg>
+          Experience
+        </a>
+        <a class="nav-link" href="contact.html">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="currentColor" d="M4 4h16v16H4zM22 6l-10 7L2 6" />
+          </svg>
+          Contact
+        </a>
+      </nav>
+
+      <!-- Mobile hamburger -->
+      <button class="hamburger" id="hambBtn" aria-label="Open menu" aria-expanded="true">
+        <!-- simple 3-line icon -->
+        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" aria-hidden>
+          <rect width="20" height="2" rx="1" fill="white" opacity="0.95" />
+          <rect y="6" width="20" height="2" rx="1" fill="white" opacity="0.95" />
+          <rect y="12" width="20" height="2" rx="1" fill="white" opacity="0.95" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile panel (hidden by default) -->
+  <div id="mobilePanel" class="mobile-panel" role="menu" aria-hidden="true">
+    <a href="home.html" class="mobile-link">Home</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="experience.html" class="mobile-link">Experience</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+  </div>
+  
+
+  <!-- Main content (landing only) -->
+  
+  <!-- ===========================
+     INTRODUCTION SECTION
+=========================== -->
+ 
+<section id="about" class="intro-section">
+
+  <h2 class="about-title">
+    Know <span class="highlight">Who</span> I'm
+  </h2>
+  
+
+    <div class="intro-text-image">
+
+      <div class="intro-text">
+        <div class="intro-text">
+          <p>Hi everyone, I'm <i id="bold">SAM NEON</i> from <i id="bold">Karachi, Pakistan.</i>
+            I am a Collab Manager and Community Manager, the CM and collab leads of NEFTIT, a NFTs based Project, and a Lead Instructor at Solvana.io and app.fingogin.com.</p>
+        
+          <!-- ADD THIS (same text you gave) -->
+          <p style="margin-top: 34px;">Apart from Web3, some other activities that I love to do!</p>
+          <ul id="about-hobbies">
+            <li>Cooking</li>
+            <li>Teaching</li>
+            <li>Travelling</li>
+            <li>Sports</li>
+          </ul>
+        </div>
+        
+        
+      </div>
+
+      <div class="intro-image">
+        <img src="dc1.jpg" alt="About illustration">
+      </div>
+
+  </div>
+
+  <!-- ===== Projects / Professional (About page) ===== -->
+<div id="about-pro-skillset" aria-label="Professional Projects">
+  <h3 class="about-skillset-title">
+    Professional <span class="about-skillset-highlight">Skillset</span>
+  </h3>
+
+  <div class="about-skillset-grid">
+    <!-- Card 1 -->
+    <figure class="about-skill-card">
+      <div class="about-skill-media">
+        <img src="pj1.jpg" alt="Project 1" class="about-skill-img">
+      </div>
+      <figcaption class="about-skill-name">NEFTIT (CM)</figcaption>
+    </figure>
+
+    <!-- Card 2 -->
+    <figure class="about-skill-card">
+      <div class="about-skill-media">
+        <img src="pj2.jpg" alt="Project 2" class="about-skill-img">
+      </div>
+      <figcaption class="about-skill-name">Fingogin (MOD)</figcaption>
+    </figure>
+
+    <!-- Card 3 -->
+    <figure class="about-skill-card">
+      <div class="about-skill-media">
+        <img src="pj3.jpg" alt="Project 3" class="about-skill-img">
+      </div>
+      <figcaption class="about-skill-name">Solvana (MOD)</figcaption>
+    </figure>
+
+    <!-- Card 4 -->
+    <figure class="about-skill-card">
+      <div class="about-skill-media">
+        <img src="pj4.jpg" alt="Project 4" class="about-skill-img">
+      </div>
+      <figcaption class="about-skill-name">PulseX (MOD)</figcaption>
+    </figure>
+  </div>
+</div>
+
+</section>
+
+  <!-- Coming soon toast -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  
+  <script src="/main.js"></script>
+</body>
+
+</html>
