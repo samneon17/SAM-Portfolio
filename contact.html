@@ -20,67 +20,49 @@
   <div class="radial-glow glow-right" aria-hidden="true"></div>
 
   <!-- Header / Navbar -->
-  <header>
-    <div class="navwrap" role="navigation" aria-label="Main navigation">
-      <div class="logo">
-        <!-- Logo Link fixed with text-decoration none to remove line -->
-        <a href="index.html" class="navbar-brand" style="text-decoration: none !important; display: inline-block;">
-          <h1 style="
-            font-family: 'Poppins', sans-serif;
-            font-size: 150%;
-            color: rgb(199, 112, 240);
-            font-weight: 900;
-            letter-spacing: 1px;
-            text-shadow: 0 0 12px rgba(199, 112, 240, 0.5);
-            margin: 0;
-            text-decoration: none !important;
-          ">S A M.</h1>
-        </a>
-      </div>
-
-      <!-- Desktop nav -->
-      <nav class="desktop">
-        <a class="nav-link" href="home.html">
-          <svg viewBox="0 0 24 24" width="20" height="20">
-            <path fill="currentColor" d="M12 3l9 9h-3v9h-12v-9h-3z" />
-          </svg>
-          Home
-        </a>
-
-        <!-- Fixed About Link to index.html -->
-        <a class="nav-link" href="index.html">
-          <svg viewBox="0 0 24 24" width="20" height="20">
-            <path fill="currentColor"
-              d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4 0-7 2-7 4v2h14v-2c0-2-3-4-7-4z" />
-          </svg>
-          About
-        </a>
-
-        <a class="nav-link" href="experience.html">
-          <svg viewBox="0 0 24 24" width="20" height="20">
-            <path fill="currentColor" d="M4 7h16v13H4zM9 4h6v3H9z" />
-          </svg>
-          Experience
-        </a>
-
-        <a class="nav-link active" href="contact.html">
-          <svg viewBox="0 0 24 24" width="20" height="20">
-            <path fill="currentColor" d="M4 4h16v16H4zM22 6l-10 7L2 6" />
-          </svg>
-          Contact
-        </a>
-      </nav>
-
-      <!-- Mobile hamburger (Same exact structure and ID) -->
-      <button class="hamburger" id="hambBtn" aria-label="Open menu" aria-expanded="false">
-        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" aria-hidden="true">
-          <rect width="20" height="2" rx="1" fill="white" opacity="0.95" />
-          <rect y="6" width="20" height="2" rx="1" fill="white" opacity="0.95" />
-          <rect y="12" width="20" height="2" rx="1" fill="white" opacity="0.95" />
-        </svg>
-      </button>
+  <!-- Header / Navbar -->
+<header>
+  <div class="navwrap" role="navigation" aria-label="Main navigation">
+    <div class="logo">
+      <a href="index.html" class="navbar-brand" style="text-decoration: none !important; border: none; outline: none;">
+        <h1 style="
+          font-family: 'Poppins', sans-serif;
+          font-size: 150%;
+          color: rgb(199, 112, 240);
+          font-weight: 900;
+          letter-spacing: 1px;
+          text-shadow: 0 0 12px rgba(199, 112, 240, 0.5);
+          margin: 0;
+        ">S A M.</h1>
+      </a>
     </div>
-  </header>
+
+    <!-- Desktop nav -->
+    <nav class="desktop">
+      <a class="nav-link" href="home.html">Home</a>
+      <a class="nav-link active" href="index.html">About</a>
+      <a class="nav-link" href="experience.html">Experience</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Hamburger (Right side design fixed) -->
+    <button class="hamburger" id="hambBtn" aria-label="Open menu">
+      <svg width="20" height="14" viewBox="0 0 20 14" fill="none">
+        <rect width="20" height="2" rx="1" fill="white" opacity="0.95" />
+        <rect y="6" width="20" height="2" rx="1" fill="white" opacity="0.95" />
+        <rect y="12" width="20" height="2" rx="1" fill="white" opacity="0.95" />
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile panel (Iska CSS aapki index.css mein pehle se hai) -->
+<div id="mobilePanel" class="mobile-panel">
+  <a href="home.html" class="mobile-link">Home</a>
+  <a href="index.html" class="mobile-link">About</a>
+  <a href="experience.html" class="mobile-link">Experience</a>
+  <a href="contact.html" class="mobile-link">Contact</a>
+</div>
 
   <!-- Mobile panel (Links fixed to index.html) -->
   <div id="mobilePanel" class="mobile-panel" role="menu" aria-hidden="true">
@@ -120,3 +102,4 @@
 
 </body>
 </html>
+
